@@ -11,14 +11,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <header style={{textAlign: `center`}}>
-        <h1>25 + 5 Clock</h1>
-        <p>AKA pomodoro technique, this is intended to help you manage your focus time</p>
-      </header>
-      <body className={inter.className}>{children}</body>
-      <footer style={{ textAlign: `center` }}>
-        <h4>Made with ❤️ by Takatalvi</h4>
-      </footer>
+      <body className={inter.className}>
+        <header style={{ textAlign: `center` }}>
+          <h1>25 + 5 Clock</h1>
+          <p>AKA pomodoro technique, this is intended to help you manage your focus time</p>
+        </header>
+        {children}
+        <footer style={{ textAlign: `center` }}>
+          <h4>Made with ❤️ by Takatalvi</h4>
+        </footer>
+      </body>
     </html>
   );
 }
