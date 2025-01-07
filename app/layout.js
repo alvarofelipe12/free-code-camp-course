@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Script from 'next/script'
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -11,6 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" />
       <body className={inter.className}>
         <header style={{ textAlign: `center` }}>
           <h1>25 + 5 Clock</h1>
