@@ -140,13 +140,13 @@ export default function Home() {
   };
 
   return (
-    <div className="grid">
-      <div className="container">
+    <div className={styles.grid}>
+      <div className={styles.container}>
         <div>
           <h3 className="" id="break-label">
             Break Length
           </h3>
-          <div className="sub-container">
+          <div className={styles.subContainer}>
             <button
               type="button"
               className=""
@@ -172,7 +172,7 @@ export default function Home() {
           <h3 className="" id="session-label">
             Session Length
           </h3>
-          <div className="sub-container">
+          <div className={styles.subContainer}>
             <button
               type="button"
               className=""
@@ -195,8 +195,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="timer">
-        <div className="timer-wrap">
+      <div className={styles.timer}>
+        <div className={styles.timerWrap}>
           <h3 className="" id="timer-label">
             {isSessionTime.current ? "Session" : "Break"}
           </h3>
@@ -206,12 +206,12 @@ export default function Home() {
           <audio preload="auto" id="beep" src="https://cdn.uppbeat.io/audio-files/57ef60eab5fd4218838423222dc07d99/858c4041b256fedec3d492133d5d181f/05d4496a5bf290d2c550895c54469249/STREAMING-timer-countdown-3-2-1-fascinatedsound-1-00-03.mp3"></audio>
         </div>
       </div>
-      <div className="timer-controls">
+      <div className={styles.timerControls}>
         <button type="button" className="" id="start_stop" onClick={chrono}>
-          <i className={"icon"}>⏯️</i>
+          <i className={styles.icon}>⏯️</i>
         </button>
         <button type="button" className="" id="reset" onClick={reset}>
-          <i className={"icon"}>🔄</i>
+          <i className={styles.icon}>🔄</i>
         </button>
       </div>
     </div>
