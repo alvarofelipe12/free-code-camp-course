@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import styles from "./page.module.css";
+
+// Also aviablable here https://codepen.io/alvarofelipe12/pen/NPKyowb
 export default function Home() {
   const SESSION_TIME = 25;
   const BREAK_TIME = 5;
